@@ -77,7 +77,7 @@ const Footer = () => {
             
           </Box>
 
-          <Typography className='text-center text-white'>
+          <Typography className='text-center text-white text-sm'>
             @2024 The Dragon News. Developed by Mahbub
           </Typography>
         </Box>
