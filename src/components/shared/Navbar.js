@@ -9,11 +9,15 @@ import Button from '@mui/material/Button';
 import logo from "@/assets/logo.png"
 import Image from 'next/image';
 import { IconButton, Stack } from '@mui/material';
+import Link from 'next/link';
 
 
 //icons
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Link from 'next/link';
+import XIcon from '@mui/icons-material/X';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Instagram } from '@mui/icons-material';
+
 
 
 const navItems = [
@@ -74,13 +78,13 @@ function Navbar() {
                 <FacebookIcon/>
             </IconButton>
             <IconButton>
-                <FacebookIcon/>
+                <XIcon/>
             </IconButton>
             <IconButton>
-                <FacebookIcon/>
+                <LinkedInIcon/>
             </IconButton>
             <IconButton>
-                <FacebookIcon/>
+                <Instagram/>
             </IconButton>
            </Stack>
           </Box>
