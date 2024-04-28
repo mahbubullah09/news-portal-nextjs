@@ -1,7 +1,6 @@
 "use client"
 import { Box, Container, Typography } from '@mui/material';
 import Image from 'next/image';
-import React from 'react';
 import headerImage from '@/assets/logo.png'
 import { getCurrentDate } from '@/utils/getCurrentDate';
 
