@@ -6,8 +6,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import logo from "@/assets/logo.png"
-import Image from 'next/image';
+import logo from "@/assets/logo1.png"
 import { IconButton, Stack } from '@mui/material';
 import Link from 'next/link';
 
@@ -18,6 +17,7 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Instagram } from '@mui/icons-material';
 import Header from './Header';
+import Image from 'next/image';
 
 
 
@@ -26,22 +26,12 @@ const navItems = [
         route: 'Home',
         path: "/"
     },
-    {
-        route: 'pages',
-        path: "/pages"
-    },
+ 
     {
         route: 'Category',
         path: "/categories/news?category=all-news"
     },
-    {
-        route: 'News',
-        path: "/news"
-    },
-    {
-        route: 'about',
-        path: "/about"
-    },
+
     {
         route: 'contact',
         path: "/contact"
@@ -60,7 +50,7 @@ function Navbar() {
     <AppBar position="static" className='bg-black'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <Image  className='w-28' src={logo} alt='logo' />
+          <Image src={logo} width={100} height={100} alt='logo' />
           
           <Box className='w-full text-center' >
             {navItems.map((page) => (
