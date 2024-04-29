@@ -1,6 +1,7 @@
 import { getCategoryNews } from '@/utils/getCategoryNews';
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const DynamicNewsPage = async({ searchParams}) => {
@@ -18,7 +19,8 @@ const DynamicNewsPage = async({ searchParams}) => {
                   {
                     data.map((news) =>(
                         <Grid key={news.id} item xs={6}>
-                        <Card >
+                      <Link href={`/${news.category.toLowerCase()}/${news._id}`}>
+                      <Card >
                             <CardActionArea>
                                 <CardMedia sx={{
                                     "& img": {
@@ -44,6 +46,7 @@ const DynamicNewsPage = async({ searchParams}) => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
+                      </Link>
                     </Grid>
                     ))
                   }
