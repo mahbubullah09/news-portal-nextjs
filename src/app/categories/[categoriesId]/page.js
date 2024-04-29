@@ -3,7 +3,7 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } f
 import Image from 'next/image';
 import React from 'react';
 
-const DynamicNewsPage = async({params, searchParams}) => {
+const DynamicNewsPage = async({ searchParams}) => {
 
     console.log(searchParams.category);
     const {data} = await getCategoryNews(searchParams.category)
@@ -11,7 +11,7 @@ const DynamicNewsPage = async({params, searchParams}) => {
     console.log(data);
     return (
         <div>
-            <h1>{searchParams.category} page</h1>
+            <h1 className='my-6'><span className=' bg-red-500 text-white px-2 py-1 text-xl'>{searchParams.category.toUpperCase()} </span></h1>
 
             <Box sx={{ width: '100%' }}>
                 <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
