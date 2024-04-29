@@ -3,11 +3,12 @@ import { Box, CardContent, Grid, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 
-const NewsDetails = async ({ params }) => {
+const NewsDetails = async({ params }) => {
+
+ 
 
     const { data } = await getSingleNews(params.newsId)
-    console.log(data);
-
+   
     return (
         <Box className=' max-w-6xl mx-auto mt-6'>
             <Grid container spacing={2}>

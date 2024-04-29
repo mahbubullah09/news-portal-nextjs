@@ -6,10 +6,10 @@ import React from 'react';
 
 const DynamicNewsPage = async({ searchParams}) => {
 
-    console.log(searchParams.category);
+    // console.log(searchParams.category);
     const {data} = await getCategoryNews(searchParams.category)
 
-    console.log(data);
+    // console.log(data);
     return (
         <div>
             <h1 className='my-6'><span className=' bg-red-500 text-white px-2 py-1 text-xl'>{searchParams.category.toUpperCase()} </span></h1>

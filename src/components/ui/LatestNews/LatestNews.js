@@ -11,7 +11,7 @@ import Link from 'next/link';
 const LatestNews = async () => {
 
     const { data } = await getCategoryNews('all-news')
-    console.log(data[0]);
+    
     return (
         <>
             <Box className='my-5'>
