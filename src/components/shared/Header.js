@@ -12,7 +12,7 @@ const Header = () => {
             <Container className='w-full my-4' >
                 <Image src={headerImage} width={500} height={100} alt='Header Image' className='mx-auto'/>
                 <Typography className='text-center  text-sm text-gray-400 mt-2' >
-            Journalishm without fear and fevour
+            Journalism without fear and fevour
           </Typography>
           <Typography className='text-center'>{currentDate}</Typography>
             </Container>
